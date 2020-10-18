@@ -28,7 +28,8 @@ promises are generally used for easier handling of anychronous operation or bloc
 4.IO calls
 
 # Thenable and catch Promise Example:
-```function job(){
+```javascript
+function job(){
     return new Promise(function(resolve,reject){
         reject();
     })
@@ -46,9 +47,11 @@ promise.then(function(){
     console.log('error 1')
 }).then(function(){
     console.log('success 4')
-})```
+});
+```
 
 ### Above program output:
-```error 1
- success 4
+```
+error 1
+success 4
 ```
