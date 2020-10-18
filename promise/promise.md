@@ -4,7 +4,7 @@ not execute same time.like first work complete lately but second work complete f
 network request,event ,thread and long runing task. 
 
 # Promise syntext
-`let promise=new Promise(function(resolve,reject){});`
+```let promise=new Promise(function(resolve,reject){});```
 
 here Promise object constructor function pass the exeecutor function.when promise object is created executor runs automatically.executor function contains producing code which should eventually produce the result.
 its arguemnt resolve and reject are callbacks which provides by javascript itself.when producer obtains results it soon or later it does not matter .then call one of callback;
@@ -28,7 +28,7 @@ promises are generally used for easier handling of anychronous operation or bloc
 4.IO calls
 
 # Thenable and catch Promise Example:
-`function job(){
+```function job(){
     return new Promise(function(resolve,reject){
         reject();
     })
@@ -46,9 +46,9 @@ promise.then(function(){
     console.log('error 1')
 }).then(function(){
     console.log('success 4')
-})`
+})```
 
 ### Above program output:
-`error 1
+```error 1
  success 4
-`
+```
